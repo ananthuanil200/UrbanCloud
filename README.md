@@ -19,6 +19,7 @@ It demonstrates **API calls, component communication, RxJS, Angular standalone c
 
 ## 📸 Demo
 
+https://drive.google.com/file/d/16TncZ1GqA8Slqa4o2Wb5_AHuTTvdA8Xr/view?usp=drive_link
 
 
 ## 🛠️ Tech Stack
