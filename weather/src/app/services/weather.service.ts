@@ -5,7 +5,7 @@ import { Weather } from '../models/weather.model';
 
 @Injectable({ providedIn: 'root' })
 export class WeatherService {
-  private apiKey = 'ea689a0c834ce1098e255377f026dc63'; // 🔑 replace with OpenWeatherMap API key
+  private apiKey = 'enter your api key'; // 🔑 replace with OpenWeatherMap API key
   private baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
   constructor(private http: HttpClient) {}
