@@ -1,0 +1,24 @@
+  <div class="app-container" [ngStyle]="cityImage ? {'background-image': 'url(' + cityImage + ')', 'background-size': 'cover', 'background-position': 'center', 'background-repeat': 'no-repeat', 'transition': 'background-image 0.5s'} : {}">
+  <h1 class="title">UrbanCloud</h1>
+
+  <!-- Search bar -->
+  <app-search (searchCity)="onSearch($event)"></app-search>
+
+  <!-- Loading / error states -->
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="error">{{ error }}</div>
+
+
+    <!-- Weather results in a card -->
+    <div *ngIf="weatherData" class="weather-card">
+      <app-weather-display [weather]="weatherData"></app-weather-display>
+    </div>
+
+    <!-- City Description / Fact -->
+    <div *ngIf="cityFact" class="fact-card">
+      <h3>About this city</h3>
+      <p>
+        {{ cityFact && (cityFactHasExtract(cityFact) ? cityFact.extract : cityFact) }}
+      </p>
+    </div>
+</div>

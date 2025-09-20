@@ -1,0 +1,51 @@
+.weather-card {
+  background: rgba(0,0,0,0.45);
+  padding: 20px 30px;
+  margin: 24px auto 16px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  max-width: 420px;
+  width: 100%;
+}
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-image 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.app-container, .app-container * {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+}
+
+.fact-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 12px;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.city-image img {
+  margin-top: 20px;
+  max-width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
