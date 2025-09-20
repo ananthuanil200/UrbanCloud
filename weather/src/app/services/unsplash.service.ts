@@ -4,7 +4,7 @@ import { Observable, map } from 'rxjs';
 
 @Injectable()
 export class UnsplashService {
-  private apiKey = '2ssJE5l_4PNQCQj4VQ-NvkIDkBTW70hH-yPR-WJX8Yk';
+  private apiKey = 'enter your api key';
 
   constructor(private http: HttpClient) {}
 
